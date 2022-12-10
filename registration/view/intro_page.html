@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styling/global_style.css">
+    <title>Welcome Screen</title>
+</head>
+<body>
+<main class="small_main">
+    <aside>
+      <Img class="sideImage" src="../../assets/images/Image Placeholder.png"></Img>
+    </aside>
+    
+      <aside>
+        <div class="introInfoContainer">
+          <h1 class="title">Welcome</h1>
+          <h3 class="subtitle">We're glad you are here! Sign up to start!</h3>
+          <button id="navButton" class="submitBtn">Get Started</button>
+      </div>
+      </aside>
+      
+<script>
+
+  document.getElementById("navButton").addEventListener('click',()=>{
+    window.location.replace("./registration_page.html")
+  })
+</script>
+        
+     
+</main>
+</body>
+</html>

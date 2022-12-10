@@ -1,0 +1,27 @@
+.regTitle{
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: 'abdolah';
+    padding-bottom: 20px;
+    line-height: 50px;
+}
+.regSubTitle{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    color: #1F1249;
+}
+
+.imgSide{
+    max-width: 21rem;
+    padding: 20px;
+}
+.infoSide{
+    max-width: 29rem;
+}
+
+.regImage{
+    width: 100%;
+}

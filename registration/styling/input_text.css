@@ -1,0 +1,84 @@
+.input{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    height: 40px;
+    padding: 8px 20px;
+    gap: 12px;
+    background-color: white;
+    border: 1px solid #DBE3FF;
+    border-radius: 10px;
+   
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+input::placeholder{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: #3B3B3B;
+}
+
+.inputTextStyle{
+padding-left: 10px;
+width:60%;
+height: 100%;
+border: none;
+
+}
+
+.icon{
+    width: 2rem;
+
+    height: 50%;
+}
+/* error container  */
+.activeError{
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: rgb(202, 231, 245);    
+    transition: all 0.3s ease-in;
+}
+
+.errHiddenContainer{
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in;
+}
+.errHiddenText{
+    opacity: 0;
+    visibility: hidden; 
+    transition: opacity 1.2s ease-in;
+   
+}
+
+.errorText{
+    padding-left: 3px;
+    color: red;
+    font-family: 'Mulish';
+    font-size: 16px;
+}
+
+.inputWithIcon{
+    display: flex;
+    align-items: center;
+    align-self: start;
+    width: 100% ;
+    height: 100%;
+}
+@media screen and (max-width:954px) {
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+} 

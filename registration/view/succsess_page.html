@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styling/global_style.css">
+    <title>Succsess</title>
+</head>
+<body>
+    <main class="small_main">
+        
+        <aside >
+            <img class="sideImage"  src="../../../assets/images/Image Placeholder3.png" alt="">
+        </aside>
+        <aside>
+            <h1 class="title">Successfully Logged In</h1>
+            <h3 class="email"></h3>
+        </aside>
+
+    </main>
+
+    <script>
+            function getUserEmail(){
+                let userEmail = window.sessionStorage.getItem('userEmail');
+
+                const emailTextHeader = document.querySelector('.email')
+                
+                emailTextHeader.innerText = userEmail
+            }
+
+            getUserEmail()
+    </script>
+</body>
+</html>

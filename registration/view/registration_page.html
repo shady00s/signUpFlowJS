@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styling/global_style.css">
+    <link rel="stylesheet" href="../styling/input_text.css">
+    <link rel="stylesheet" href="../styling/registration_style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Sign in</title>
+</head>
+<body>
+    <main>
+       
+        <aside class="imgSide">
+            <img class="regImage" src="../../assets/images/Image Placeholder2.png" alt="">
+        </aside>
+
+        <aside class="infoSide">
+                <h1 class="regTitle">Create Account</h1>
+                <h3 class="regSubTitle">Go ahead and sign up, let everyone know how awesome you are!</h3>
+                <form id="registrationForm" action="">
+                    
+                    <div class="input">
+                        <div class="inputWithIcon">
+                            <img class="icon"  src="../../assets/images/person.png" alt="" >
+                            <input placeholder="Username" class="inputTextStyle" type="text" name="username" id="username">
+                        
+                        </div>
+                    </div>
+                    <div class="err   errHiddenContainer">
+                        <i class="fa-solid fa-circle-xmark" style="color: rgb(232, 32, 32);"></i>
+                    <span class="errorText">username is not valid or empty ,please write valid username. </span>
+                    </div>
+                 
+                    <div class="input">
+                        <div class="inputWithIcon">
+                        <img class="icon"  src="../../assets/images/email.png" alt="">
+                        <input placeholder="Email" class="inputTextStyle" type="email" name="email" id="email">
+                    </div>
+                        
+
+                    </div>
+                    <div class="emailError   errHiddenContainer">
+                        <i class="fa-solid fa-circle-xmark" style="color: rgb(232, 32, 32);"></i>
+                    <span class="emailErrorText">email is not valid ,please write valid email. </span>
+                    </div>
+                    <div class="input">
+                        <div class="inputWithIcon">
+                        <img class="icon"  src="../../assets/images/pass.png" alt="">
+                        <input placeholder="Password" class="inputTextStyle" type="password" name="password" id="password">
+                    </div>
+                        
+                    </div>
+
+                    <div class="passwordError   errHiddenContainer">
+                        <i class="fa-solid fa-circle-xmark" style="color: rgb(232, 32, 32);"></i>
+                    <span class="passwordErrorText">pasword is not valid, it must be 8 characters or more.</span>
+                    </div>
+
+                    <div class="input">
+                        <div class="inputWithIcon">
+                        <img class="icon"  src="../../assets/images/pass.png" alt="">
+                        <input placeholder="Confirm password" class="inputTextStyle" type="password" name="password_confirmation" id="confirmPassword">
+                    </div>
+                       
+                    </div>
+                    <div class="confirmPasswordError   errHiddenContainer">
+                        <i class="fa-solid fa-circle-xmark" style="color: rgb(232, 32, 32);"></i>
+                    <span class="confirmPasswordErrorText">The two passwords are not the same.</span>
+                    </div>
+                    <button disabled id="submitBtn" type="submit" class="deactivatedBtn">Get Started</button>
+                </form>
+                
+        </aside>
+   
+    </main>
+    <script src="../scripts/script.js" type="module"></script>
+    <script src="../scripts/validation.js"type="module"></script>
+    <script src="../scripts/api_call.js" type="module"></script>
+    <script src="../scripts/animation.js" type="module"></script>
+    <script src="../scripts/utils/session_storage.js" type="module"></script>
+    
+</body>
+</html>

@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'abdolah';
+    src: url('../../assets/fonts/abdolah/abdoullah-ashgar-el-kharef.ttf');
+}
+
+@font-face {
+    font-family: 'mulish';
+    src: url('../../assets/fonts/mulish/static/Mulish-Medium.ttf');
+}
+
+
+
+body{
+    background-image: url('../../assets/images/bk.png');
+    padding: 200px 100px;
+}
+
+.sideImage{
+    max-width: 20rem;
+    padding: 20px;
+}
+.subtitle{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    color: #1F1249;
+}
+.small_main{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;   
+    flex-wrap: wrap; 
+}
+
+.title{
+    color: #2D2D2D;
+    font-family: 'abdolah';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 120%;
+}
+.email{
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1F1249;
+}
+
+main{
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(245, 247, 255, 0.85);
+    border-radius: 10px;   
+    flex-wrap: wrap; 
+    padding: 4rem;
+    width: 70%;
+    height: 50%;
+    
+
+}
+
+
+.submitBtn{
+    margin-top: 10px;
+    cursor: pointer;
+    font-family: 'mulish';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22.4px;
+    border: none;
+    width: 100%;
+    color: white;
+    border-radius: 0.2rem;
+    height:4rem;
+    background-image:linear-gradient(to right, rgba(38, 99, 223, 1),
+    
+    rgba(117, 143, 240, 1));
+    transition:all 0.4s ease-in-out;
+}
+
+
+.deactivatedBtn{
+    cursor:not-allowed;
+    margin-top: 10px;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #08174E;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    gap: 12px;
+    height:4rem;
+    width: 100%;
+    left: 20px;
+    background: linear-gradient(113.87deg, rgba(38, 99, 223, 0.1) 14.81%, rgba(117, 143, 240, 0.1) 88.76%);
+    border-radius: 10px;
+    transition:all 0.4s ease-in-out;
+
+}
+
+.submitBtn:hover{
+    background-image:linear-gradient(to left, rgba(38, 99, 223, 1),
+    rgba(117, 143, 240, 1));
+   
+}
+
+@media screen and (max-width:756px) {
+    body{
+        padding: 0;
+    }
+    main{
+        width: 90%;
+        padding: 4%;
+    }
+    .imgSide ,.infoSide{
+        width: 90%;
+    }
+
+    .introInfoContainer{
+        text-align: center;
+        justify-content: center;
+    }
+   
+}
+
+
+
+
