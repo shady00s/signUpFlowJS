@@ -7,7 +7,7 @@ const registrationData = new FormData(registrationForm);
 
 // api call 
 export default function sendDataToApi(){
-    console.log('working')
+  
     const URL = 'https://goldblv.com/api/hiring/tasks/register';
     fetch(URL,{
         method:"POST",
